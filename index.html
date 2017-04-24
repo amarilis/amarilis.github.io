@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="b-filter">
+
+    <div class="filter__block b-search">
+        <input type="text" class="search__input" placeholder="Введите запрос">
+    </div>
+
+    <div class="filter__block b-select">
+
+        <div class="b-select__item">
+            <select class="select__item select__item-school">
+                <option>Все школы</option>
+                <option>Разработки интерфейсов</option>
+                <option>Мобильной разработки</option>
+                <option>Мобильного дизайна</option>
+            </select>
+        </div>
+
+        <div class="b-select__item">
+            <select class="select__item select__item-reader">
+                <option>Все лекторы</option>
+                <option>Дмитрий Душкин</option>
+                <option>Максим Васильев</option>
+                <option>Сергей Бережной</option>
+                <option>Андрей Морозов</option>
+                <option>Иван Карев</option>
+                <option>Прокопюк Андрей</option>
+                <option>Эдуард Мацуков</option>
+                <option>Дмитрий Складнов</option>
+                <option>Роман Григорьев</option>
+                <option>Антон Тен</option>
+                <option>Васюнин Николай</option>
+                <option>Сергей Калабин</option>
+                <option>Сергей Томилов</option>
+                <option>Дарья Старицына</option>
+                <option>Василий Пупкин</option>
+                <option>Иванов Иван</option>
+                <option>Пертров Петр</option>
+                <option>Сергеев Сергей</option>
+            </select>
+        </div>
+
+        <div class="b-select__item">
+            <select class="select__item select__item-date">
+                <option>Сортировка по дате</option>
+                <option>По возрастанию</option>
+                <option>По убыванию</option>
+                <option>Только прошедшие</option>
+                <option>Только будущие</option>
+            </select>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="b-schedule">
+    <div class="b-schedule__item">
+
+        <div class="b-schedule__section b-schedule__section-header">
+            <div class="schedule__item schedule__school"><div class="schedule__school-header">Школа</div></div>
+            <div class="schedule__item schedule__theme"><div class="schedule__school-header">Тема лекции</div></div>
+            <div class="schedule__item schedule__reader"><div class="schedule__school-header">Лектор</div></div>
+            <div class="schedule__item schedule__block_date"><div class="schedule__school-header">Дата</div></div>
+        </div>
+
+    </div>
+
+    <div class="b-schedule__sort">
+
+        <div class="b-schedule__section">
+            <div class="schedule__item schedule__school">Разработки интерфейсов</div>
+            <div class="schedule__item schedule__theme">Адаптивная вёрстка</div>
+            <div class="schedule__item schedule__reader">
+                <div class="js-schedule__show_tooltip js-schedule__show_tooltip-presence">
+                    <span class="js-schedule__show_tooltip-reader" data-tooltip="Кандидат технических наук, научный сотрудник ИПУ РАН с 2008 по 2013. Пришёл в Яндекс.Картинки в 2014 году, отвечал за мобильную версию и рост производительности сервиса. В 2016 перешёл в Yandex Data Factory, где разрабатывает интерфейсы и дизайн веб-приложений для B2B.">Дмитрий Душкин</span>
+                </div>
+            </div>
+            <div class="schedule__item schedule__block_date">
+                <div class="schedule__block_date-date"></div>
+                <div class="schedule__block_date-place">Класс № 1</div>
+                <div class="schedule__block_date-buttons">
+                    <a href="#download" class="schedule__date-action schedule__date-action-type_download">Скачать</a>
+                    <a href="#video" class="schedule__date-action schedule__date-action-type_watch">Смотреть</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-schedule__section">
+            <div class="schedule__item schedule__school">Разработки интерфейсов</div>
+            <div class="schedule__item schedule__theme">Работа с сенсорным пользовательским вводом</div>
+            <div class="schedule__item schedule__reader">
+                <div class="js-schedule__show_tooltip">
+                    <span class="js-schedule__show_tooltip-reader">Дмитрий Душкин</span>
+                </div>
+            </div>
+            <div class="schedule__item schedule__block_date">
+                <div class="schedule__block_date-date"></div>
+                <div class="schedule__block_date-place">Класс № 2</div>
+                <div class="schedule__block_date-buttons">
+                    <a href="#download" class="schedule__date-action schedule__date-action-type_download">Скачать</a>
+                    <a href="#video" class="schedule__date-action schedule__date-action-type_watch">Смотреть</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-schedule__section">
+            <div class="schedule__item schedule__school">Разработки интерфейсов</div>
+            <div class="schedule__item schedule__theme">Мультимедиа: возможности браузера</div>
+            <div class="schedule__item schedule__reader">
+                <div class="js-schedule__show_tooltip js-schedule__show_tooltip-presence"><span class="js-schedule__show_tooltip-reader" data-tooltip="Во фронтенд-разработке с 2007 года. До 2013-го, когда пришёл в Яндекс, работал технологом в студии Лебедева и других компаниях.">Максим Васильев</span></div>
+            </div>
+            <div class="schedule__item schedule__block_date">
+                <div class="schedule__block_date-date"></div>
+                <div class="schedule__block_date-place">Класс № 3</div>
+                <div class="schedule__block_date-buttons">
+                    <a href="#download" class="schedule__date-action schedule__date-action-type_download">Скачать</a>
+                    <a href="#video" class="schedule__date-action schedule__date-action-type_watch">Смотреть</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-schedule__section">
+            <div class="schedule__item schedule__school">Разработки интерфейсов</div>
+            <div class="schedule__item schedule__theme">Нативные приложения на веб-технологиях</div>
+            <div class="schedule__item schedule__reader">
+                <div class="js-schedule__show_tooltip js-schedule__show_tooltip-presence"><span class="js-schedule__show_tooltip-reader" data-tooltip="Веб-разработчик в Яндексе с 2005 года. Успел поработать над Поиском, Почтой, Поиском по блогам, Я.ру, Картинками, Видео. Помимо этого, активно занимается развитием внутренних инструментов для создания сайтов.">Сергей Бережной</span></div>
+            </div>
+            <div class="schedule__item schedule__block_date">
+                <div class="schedule__block_date-date"></div>
+                <div class="schedule__block_date-place">Класс № 4</div>
+                <div class="schedule__block_date-buttons">
+                    <a href="#download" class="schedule__date-action schedule__date-action-type_download">Скачать</a>
+                    <a href="#video" class="schedule__date-action schedule__date-action-type_watch">Смотреть</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-schedule__section">
+            <div class="schedule__item schedule__school">Разработки интерфейсов</div>
+            <div class="schedule__item schedule__theme">Клиентская оптимизация: базовые знания и лучшие практики</div>
+            <div class="schedule__item schedule__reader">
+                <div class="js-schedule__show_tooltip js-schedule__show_tooltip-presence"><span class="js-schedule__show_tooltip-reader" data-tooltip="Окончил радиофизический факультет Киевского Национального Университета. Автор трёх патентных заявок. В Яндексе с 2014 года, разрабатывает интерфейсы Яндекс.Карт.">Андрей Морозов</span></div>
+            </div>
+            <div class="schedule__item schedule__block_date">
+                <div class="schedule__block_date-date"></div>
+                <div class="schedule__block_date-place">Класс № 5</div>
+                <div class="schedule__block_date-buttons">
+                    <a href="#download" class="schedule__date-action schedule__date-action-type_download">Скачать</a>
+                    <a href="#video" class="schedule__date-action schedule__date-action-type_watch">Смотреть</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-schedule__section">
+            <div class="schedule__item schedule__school">Разработки интерфейсов</div>
+            <div class="schedule__item schedule__theme">Клиентская оптимизация: мобильные устройства и инструменты</div>
+            <div class="schedule__item schedule__reader">
+                <div class="js-schedule__show_tooltip js-schedule__show_tooltip-presence"><span class="js-schedule__show_tooltip-reader" data-tooltip="Окончил факультет ВМК (вычислительной математики и кибернетики) МГУ им. М.В. Ломоносова, занимается веб-программированием с 2007 года. Сначала делал админки для системы фильтрации трафика, затем — интерфейсы онлайн-карт для проекта Космоснимки. В Яндексе начинал с Народа и Я.ру, последние два года занимался главной страницей. В настоящее время специализируется на вопросах производительности: от серверного JS до оптимизации загрузки страницы на клиенте.">Иван Карев</span></div>
+            </div>
+            <div class="schedule__item schedule__block_date">
+                <div class="schedule__block_date-date"></div>
+                <div class="schedule__block_date-place">Класс № 1</div>
+                <div class="schedule__block_date-buttons">
+                    <a href="#download" class="schedule__date-action schedule__date-action-type_download">Скачать</a>
+                    <a href="#video" class="schedule__date-action schedule__date-action-type_watch">Смотреть</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-schedule__section">
+            <div class="schedule__item schedule__school">Разработки интерфейсов</div>
+            <div class="schedule__item schedule__theme">Инфраструктура веб-проектов</div>
+            <div class="schedule__item schedule__reader">
+                <div class="js-schedule__show_tooltip js-schedule__show_tooltip-presence"><span class="js-schedule__show_tooltip-reader" data-tooltip="В 2008 году впечатлился веб-разработкой из-за скорости воплощения идей и лёгкость их донесения до пользователей. В Яндексе с 2014 года, разрабатывает страницу поисковой выдачи. Любит сложные задачи, интересуется аналитикой, тестированием и новыми способами автоматизировать рутину.">Прокопюк Андрей</span></div>
+            </div>
+            <div class="schedule__item schedule__block_date">
+                <div class="schedule__block_date-date"></div>
+                <div class="schedule__block_date-place">Класс № 2</div>
+                <div class="schedule__block_date-buttons">
+                    <a href="#download" class="schedule__date-action schedule__date-action-type_download">Скачать</a>
+                    <a href="#video" class="schedule__date-action schedule__date-action-type_watch">Смотреть</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-schedule__section">
+            <div class="schedule__item schedule__school">Разработки интерфейсов</div>
+            <div class="schedule__item schedule__theme">Инструменты разработки мобильного фронтенда</div>
+            <div class="schedule__item schedule__reader">
+                <div class="js-schedule__show_tooltip"><span class="js-schedule__show_tooltip-reader">Прокопюк Андрей</span></div>
+            </div>
+            <div class="schedule__item schedule__block_date">
+                <div class="schedule__block_date-date"></div>
+                <div class="schedule__block_date-place">Класс № 3</div>
+                <div class="schedule__block_date-buttons">
+                    <a href="#download" class="schedule__date-action schedule__date-action-type_download">Скачать</a>
+                    <a href="#video" class="schedule__date-action schedule__date-action-type_watch">Смотреть</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-schedule__section">
+            <div class="schedule__item schedule__school">Мобильной разработки</div>
+            <div class="schedule__item schedule__theme">Java Blitz (Часть 1)</div>
+            <div class="schedule__item schedule__reader">
+                <div class="js-schedule__show_tooltip js-schedule__show_tooltip-presence"><span class="js-schedule__show_tooltip-reader" data-tooltip="Разрабатываю приложения для Android с 2010 года. В 2014 делал высоконагруженное финансовое приложение. Тогда же начал осваивать АОП, внедряя язык в продакшн. В 2015 разрабатывал инструменты для Android Studio, позволяющие использовать aspectJ в своих проектах. В Яндексе занят на проекте Авто.ру.">Эдуард Мацуков</span></div>
+            </div>
+            <div class="schedule__item schedule__block_date">
+                <div class="schedule__block_date-date"></div>
+                <div class="schedule__block_date-place">Класс № 4</div>
+                <div class="schedule__block_date-buttons">
+                    <a href="#download" class="schedule__date-action schedule__date-action-type_download">Скачать</a>
+                    <a href="#video" class="schedule__date-action schedule__date-action-type_watch">Смотреть</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-schedule__section">
+            <div class="schedule__item schedule__school">Мобильной разработки</div>
+            <div class="schedule__item schedule__theme">Git & Workflow</div>
+            <div class="schedule__item schedule__reader">
+                <div class="js-schedule__show_tooltip js-schedule__show_tooltip-presence"><span class="js-schedule__show_tooltip-reader" data-tooltip="Окончил факультет ИТ Московского Технического Университета. В Яндексе с 2015 года, разрабатывает приложение Auto.ru для Android.">Дмитрий Складнов</span></div>
+            </div>
+            <div class="schedule__item schedule__block_date">
+                <div class="schedule__block_date-date"></div>
+                <div class="schedule__block_date-place">Класс № 5</div>
+                <div class="schedule__block_date-buttons">
+                    <a href="#download" class="schedule__date-action schedule__date-action-type_download">Скачать</a>
+                    <a href="#video" class="schedule__date-action schedule__date-action-type_watch">Смотреть</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-schedule__section">
+            <div class="schedule__item schedule__school">Мобильной разработки</div>
+            <div class="schedule__item schedule__theme">Java Blitz (Часть 2)</div>
+            <div class="schedule__item schedule__reader">
+                <div class="js-schedule__show_tooltip js-schedule__show_tooltip-presence"><span class="js-schedule__show_tooltip-reader" data-tooltip="Разрабатываю приложения для Android с 2010 года. В 2014 делал высоконагруженное финансовое приложение. Тогда же начал осваивать АОП, внедряя язык в продакшн. В 2015 разрабатывал инструменты для Android Studio, позволяющие использовать aspectJ в своих проектах. В Яндексе занят на проекте Авто.ру.">Эдуард Мацуков</span></div>
+            </div>
+            <div class="schedule__item schedule__block_date">
+                <div class="schedule__block_date-date"></div>
+                <div class="schedule__block_date-place">Класс № 1</div>
+                <div class="schedule__block_date-buttons">
+                    <a href="#download" class="schedule__date-action schedule__date-action-type_download">Скачать</a>
+                    <a href="#video" class="schedule__date-action schedule__date-action-type_watch">Смотреть</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-schedule__section">
+            <div class="schedule__item schedule__school">Мобильной разработки</div>
+            <div class="schedule__item schedule__theme">MyFirstApp (Часть 1)</div>
+            <div class="schedule__item schedule__reader">
+                <div class="js-schedule__show_tooltip"><span class="js-schedule__show_tooltip-reader">Роман Григорьев</span></div>
+            </div>
+            <div class="schedule__item schedule__block_date">
+                <div class="schedule__block_date-date"></div>
+                <div class="schedule__block_date-place">Класс № 2</div>
+                <div class="schedule__block_date-buttons">
+                    <a href="#download" class="schedule__date-action schedule__date-action-type_download">Скачать</a>
+                    <a href="#video" class="schedule__date-action schedule__date-action-type_watch">Смотреть</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-schedule__section">
+            <div class="schedule__item schedule__school">Мобильной разработки</div>
+            <div class="schedule__item schedule__theme">MyFirstApp (Часть 2)</div>
+            <div class="schedule__item schedule__reader">
+                <div class="js-schedule__show_tooltip js-schedule__show_tooltip-presence"><span class="js-schedule__show_tooltip-reader" data-tooltip="Окончил Самарский университет. Разрабатывает приложения для Android с 2010 года. В Яндексе — с 2012-го. Руководит разработкой мобильных клиентов Яндекс.Диска.">Роман Григорьев</span></div>
+            </div>
+            <div class="schedule__item schedule__block_date">
+                <div class="schedule__block_date-date"></div>
+                <div class="schedule__block_date-place">Класс № 3</div>
+                <div class="schedule__block_date-buttons">
+                    <a href="#download" class="schedule__date-action schedule__date-action-type_download">Скачать</a>
+                    <a href="#video" class="schedule__date-action schedule__date-action-type_watch">Смотреть</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-schedule__section">
+            <div class="schedule__item schedule__school">Мобильного дизайна</div>
+            <div class="schedule__item schedule__theme">Идея, исследование, концепт (Часть 1)</div>
+            <div class="schedule__item schedule__reader">
+                <div class="js-schedule__show_tooltip js-schedule__show_tooltip-presence"><span class="js-schedule__show_tooltip-reader" data-tooltip="В Яндексе с 2014 года. Ведущий дизайнер продукта в сервисах Переводчик, Расписания и Видео.">Антон Тен</span></div>
+            </div>
+            <div class="schedule__item schedule__block_date">
+                <div class="schedule__block_date-date"></div>
+                <div class="schedule__block_date-place">Класс № 4</div>
+                <div class="schedule__block_date-buttons">
+                    <a href="#download" class="schedule__date-action schedule__date-action-type_download">Скачать</a>
+                    <a href="#video" class="schedule__date-action schedule__date-action-type_watch">Смотреть</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-schedule__section">
+            <div class="schedule__item schedule__school">Мобильного дизайна</div>
+            <div class="schedule__item schedule__theme">Идея, исследование, концепт (Часть 2)</div>
+            <div class="schedule__item schedule__reader">
+                <div class="js-schedule__show_tooltip js-schedule__show_tooltip-presence"><span class="js-schedule__show_tooltip-reader" data-tooltip="В Яндексе с 2014 года. Ведущий дизайнер продукта в сервисах Переводчик, Расписания и Видео.">Антон Тен</span></div>
+            </div>
+            <div class="schedule__item schedule__block_date">
+                <div class="schedule__block_date-date"></div>
+                <div class="schedule__block_date-place">Класс № 5</div>
+                <div class="schedule__block_date-buttons">
+                    <a href="#download" class="schedule__date-action schedule__date-action-type_download">Скачать</a>
+                    <a href="#video" class="schedule__date-action schedule__date-action-type_watch">Смотреть</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-schedule__section">
+            <div class="schedule__item schedule__school">Мобильного дизайна</div>
+            <div class="schedule__item schedule__theme">Особенности проектирования мобильных интерфейсов</div>
+            <div class="schedule__item schedule__reader">
+                <div class="js-schedule__show_tooltip js-schedule__show_tooltip-presence"><span class="js-schedule__show_tooltip-reader" data-tooltip="Пришёл в Яндекс в 2014 году. Дизайнер продукта в музыкальных сервисах компании, участник команды разработки Яндекс.Радио.">Васюнин Николай</span></div>
+            </div>
+            <div class="schedule__item schedule__block_date">
+                <div class="schedule__block_date-date"></div>
+                <div class="schedule__block_date-place">Класс № 1</div>
+                <div class="schedule__block_date-buttons">
+                    <a href="#download" class="schedule__date-action schedule__date-action-type_download">Скачать</a>
+                    <a href="#video" class="schedule__date-action schedule__date-action-type_watch">Смотреть</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-schedule__section">
+            <div class="schedule__item schedule__school">Мобильного дизайна</div>
+            <div class="schedule__item schedule__theme">Продукт и платформа</div>
+            <div class="schedule__item schedule__reader">
+                <div class="js-schedule__show_tooltip js-schedule__show_tooltip-presence"><span class="js-schedule__show_tooltip-reader" data-tooltip="Пришёл в компанию дизайнером мобильных приложений в 2013-м. Три года занимался музыкальными сервисами Яндекса, сейчас руководит дизайном турецкого направления. Считает что дизайнера должна отличать любовь к людям.">Сергей Калабин</span></div>
+            </div>
+            <div class="schedule__item schedule__block_date">
+                <div class="schedule__block_date-date"></div>
+                <div class="schedule__block_date-place">Класс № 2</div>
+                <div class="schedule__block_date-buttons">
+                    <a href="#download" class="schedule__date-action schedule__date-action-type_download">Скачать</a>
+                    <a href="#video" class="schedule__date-action schedule__date-action-type_watch">Смотреть</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-schedule__section">
+            <div class="schedule__item schedule__school">Мобильного дизайна</div>
+            <div class="schedule__item schedule__theme">Природа операционных систем</div>
+            <div class="schedule__item schedule__reader">
+                <div class="js-schedule__show_tooltip js-schedule__show_tooltip-presence"><span class="js-schedule__show_tooltip-reader" data-tooltip="Пришёл в Яндекс в 2014 году. Дизайнер продукта в музыкальных сервисах компании, участник команды разработки Яндекс.Радио.">Васюнин Николай</span></div>
+            </div>
+            <div class="schedule__item schedule__block_date">
+                <div class="schedule__block_date-date"></div>
+                <div class="schedule__block_date-place">Класс № 3</div>
+                <div class="schedule__block_date-buttons">
+                    <a href="#download" class="schedule__date-action schedule__date-action-type_download">Скачать</a>
+                    <a href="#video" class="schedule__date-action schedule__date-action-type_watch">Смотреть</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-schedule__section">
+            <div class="schedule__item schedule__school">Мобильного дизайна</div>
+            <div class="schedule__item schedule__theme">Прототипирование как процесс</div>
+            <div class="schedule__item schedule__reader">
+                <div class="js-schedule__show_tooltip js-schedule__show_tooltip-presence"><span class="js-schedule__show_tooltip-reader" data-tooltip="Серёжа: Профессионально занимается дизайном с 2009 года. В 2010 году переключился на работу исключительно над интерфейсами, по большей части мобильными. В Яндекс пришёл в 2011 году. Участвовал в создании разных продуктов Поиска, Диска, Фоток и Музыки для всех популярных платформ.">Сергей Томилов</span></div>
+                <div class="js-schedule__show_tooltip js-schedule__show_tooltip-presence"><span class="js-schedule__show_tooltip-reader" data-tooltip="Дизайнер мобильных продуктов. До прихода в компанию занималась интерфейсами мобильных игр. В Яндексе делает Браузер под все платформы. Также успела поработать над экспериментальными голосовыми интерфейсами и мобильной версией главной страницы Яндекса.">Дарья Старицына</span></div>
+            </div>
+            <div class="schedule__item schedule__block_date">
+                <div class="schedule__block_date-date"></div>
+                <div class="schedule__block_date-place">Класс № 4</div>
+                <div class="schedule__block_date-buttons">
+                    <a href="#download" class="schedule__date-action schedule__date-action-type_download">Скачать</a>
+                    <a href="#video" class="schedule__date-action schedule__date-action-type_watch">Смотреть</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-schedule__section">
+            <div class="schedule__item schedule__school">Мобильного дизайна</div>
+            <div class="schedule__item schedule__theme">Инструмент под задачи</div>
+            <div class="schedule__item schedule__reader">
+                <div class="js-schedule__show_tooltip"><span class="js-schedule__show_tooltip-reader">Сергей Томилов</span></div>
+                <div class="js-schedule__show_tooltip"><span class="js-schedule__show_tooltip-reader">Дарья Старицына</span></div>
+            </div>
+            <div class="schedule__item schedule__block_date">
+                <div class="schedule__block_date-date"></div>
+                <div class="schedule__block_date-place">Класс № 5</div>
+                <div class="schedule__block_date-buttons">
+                    <a href="#download" class="schedule__date-action schedule__date-action-type_download">Скачать</a>
+                    <a href="#video" class="schedule__date-action schedule__date-action-type_watch">Смотреть</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-schedule__section">
+            <div class="schedule__item schedule__school">Мобильного дизайна</div>
+            <div class="schedule__item schedule__theme">Анимации</div>
+            <div class="schedule__item schedule__reader">
+                <div class="js-schedule__show_tooltip"><span class="js-schedule__show_tooltip-reader">Сергей Томилов</span></div>
+                <div class="js-schedule__show_tooltip js-schedule__show_tooltip-presence"><span class="js-schedule__show_tooltip-reader" data-tooltip="Дизайнер мобильных продуктов. До прихода в компанию занималась интерфейсами мобильных игр. В Яндексе делает Браузер под все платформы. Также успела поработать над экспериментальными голосовыми интерфейсами и мобильной версией главной страницы Яндекса.">Дарья Старицына</span></div>
+            </div>
+            <div class="schedule__item schedule__block_date">
+                <div class="schedule__block_date-date"></div>
+                <div class="schedule__block_date-place">Класс № 1</div>
+                <div class="schedule__block_date-buttons">
+                    <a href="#download" class="schedule__date-action schedule__date-action-type_download">Скачать</a>
+                    <a href="#video" class="schedule__date-action schedule__date-action-type_watch">Смотреть</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-schedule__section">
+            <div class="schedule__item schedule__school">
+                            <div>Мобильного дизайна</div>
+                            <div>Мобильной разработки</div>
+                        </div>
+            <div class="schedule__item schedule__theme">Анимации в мобилке</div>
+            <div class="schedule__item schedule__reader">
+                <div class="js-schedule__show_tooltip"><span class="js-schedule__show_tooltip-reader">Василий Пупкин</span></div>
+            </div>
+            <div class="schedule__item schedule__block_date">
+                <div class="schedule__block_date-date"></div>
+                <div class="schedule__block_date-place">Класс № 2</div>
+                <div class="schedule__block_date-buttons">
+                    <a href="#download" class="schedule__date-action schedule__date-action-type_download">Скачать</a>
+                    <a href="#video" class="schedule__date-action schedule__date-action-type_watch">Смотреть</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-schedule__section">
+            <div class="schedule__item schedule__school">
+                            <div>Разработки интерфейсов</div>
+                            <div>Мобильной разработки</div>
+                        </div>
+            <div class="schedule__item schedule__theme">Разработка всего интересного</div>
+            <div class="schedule__item schedule__reader">
+                <div class="js-schedule__show_tooltip js-schedule__show_tooltip-presence"><span class="js-schedule__show_tooltip-reader" data-tooltip="Разработчик">Иванов Иван</span></div>
+                <div class="js-schedule__show_tooltip js-schedule__show_tooltip-presence"><span class="js-schedule__show_tooltip-reader" data-tooltip="Дизайнер">Пертров Петр</span></div>
+                <div class="js-schedule__show_tooltip js-schedule__show_tooltip-presence"><span class="js-schedule__show_tooltip-reader" data-tooltip="Менеджер">Сергеев Сергей</span></div>
+            </div>
+            <div class="schedule__item schedule__block_date">
+                <div class="schedule__block_date-date"></div>
+                <div class="schedule__block_date-place">Класс № 3</div>
+                <div class="schedule__block_date-buttons">
+                    <a href="#download" class="schedule__date-action schedule__date-action-type_download">Скачать</a>
+                    <a href="#video" class="schedule__date-action schedule__date-action-type_watch">Смотреть</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
